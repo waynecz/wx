@@ -1,0 +1,91 @@
+.file-input {
+    position: relative;
+    display: block;
+    flex-grow: 1;
+    width: 100%;
+    height: 41px;
+    border-radius: 4px;
+    background: #fff;
+    overflow: hidden;
+    border: 1px solid $pr;
+    &.selected {
+    }
+    &__icon {
+        display: none;
+        position: absolute;
+        font-size: 34px!important;
+        left: 50%;
+        top: 40%;
+        color: $ig;
+        transform: translate(-50%, -50%);
+    }
+    &__ps {
+        margin: 0;
+        font-size: 18px;
+        color: $pr;
+        line-height: 41px;
+        text-align: center;
+    }
+    &__preview-box {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        overflow: hidden;
+        background: #333;
+    }
+    &__preview {
+        position: relative;
+        top: 0;
+        z-index: 2;
+        width: 100%;
+    }
+    &__label {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        z-index: 10;
+        cursor: pointer;
+        margin-bottom: 0;
+        &:hover {
+            ~ .file-input__mask {
+                display: block;
+            }
+        }
+    }
+    &__inputer {
+        position: absolute;
+        left: -9999px;
+    }
+    &__mask {
+        display: none;
+        position: absolute;
+        z-index: 9;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        text-align: center;
+        background: rgba(0, 0, 0, .22);
+    }
+    &__file-name {
+        color: white;
+        font-size: 14px;
+        padding-top: 10px;
+        display: inline-block;
+    }
+    &__change {
+        position: absolute;
+        bottom: 0;
+        margin: 0;
+        font-size: 12px;
+        background: rgba(0,0,0,.7);
+        text-align: center;
+        color: white;
+        width: 100%;
+        padding: 9px 0;
+    }
+}

@@ -1,0 +1,125 @@
+.sign {
+    position: relative;
+    width: 100vw;
+    min-width: 100vw;
+    height: 100vh;
+    min-height: 400px;
+    overflow: hidden;
+    //background: #f06d27;
+    &__main {
+        position: relative;
+        background: #3f4950;
+        width: 100%;
+        height: 100%;
+    }
+    &__in {
+        padding: 0 2vw;
+        padding-top: 20vh;
+        border-radius: 3px;
+        height: 100%;
+    }
+    &__up {
+        padding-top: 5vh;
+    }
+    &__inputer {
+        margin-bottom: 10vh;
+        border-radius: 3px;
+        width: 90%;
+        overflow: hidden;
+    }
+    &__button {
+        width: 90%;
+        &--or {
+            background: $em;
+        }
+    }
+    &__tab {
+        position: absolute;
+        bottom: 10vh;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        width: 70%;
+        color: #fff;
+
+        &-lighter {
+            position: absolute;
+            width: 3px;
+            height: 3px;
+            background: $em;
+            border-radius: 50%;
+            bottom: -7px;
+            left: 25%;
+            transform: translateX(-50%);
+            transition: 0.3s .15s cubic-bezier(0.4, 0, 0.2, 1);;
+            will-change: transform;
+            &.active {
+                left: 75%;
+            }
+        }
+        &-inner {
+            position: relative;
+            width: 50%;
+            font-size: 15px;
+            color: #6e7085;
+            letter-spacing: 1px;
+            text-align: center;
+            font-weight: lighter;
+            transition: t(.3);
+            &.active {
+                color: #fff;
+
+            }
+        }
+    }
+    &__address {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: #fff;
+    }
+    &__picker {
+        min-height: 48px;
+        background: #fff;
+        padding: 0 10px;
+        border-top: 1px solid #eee;
+        &-title {
+            font-size: 15px;
+            width: 103px;
+        }
+        &-content {
+            font-size: 15px ;
+            padding: 10px 0;
+        }
+    }
+    &__placeholder {
+        color: #ddd;
+    }
+    &__pic {
+        width: 100vw;
+        padding: 5vw;
+        background: #fff;
+        &-button {
+            margin-top: 20px;
+        }
+    }
+}
+
+.logo {
+    width: 40vw;
+    margin-bottom: 10vh;
+}
+
+.address-bar {
+    width: 100%;
+
+    &__button {
+        width: 50%;
+        padding: 15px 0;
+        font-size: 14px;
+        color: $pr;
+        text-align: center;
+    }
+}
+
